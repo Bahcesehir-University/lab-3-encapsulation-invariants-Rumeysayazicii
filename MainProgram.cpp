@@ -1,4 +1,5 @@
-// ============================================================
+
+    // ============================================================
 // CMP1002 - Lab: Encapsulation and Invariants
 // Student Version - MainProgram.cpp
 // ============================================================
@@ -130,7 +131,7 @@ public:
         if(amount > balance_){
             throw runtime_error("Insufficient funds");
         }
-        balance_= amount;
+        balance_ -= amount;
     }
 
     // Transfer money from this account to another.
